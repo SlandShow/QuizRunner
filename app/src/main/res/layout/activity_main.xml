@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.test_apps.slandshow.quizrunner.MainActivity">
+
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="450dp"
+        android:layout_height="63dp"
+        android:text="Programming test"
+        tools:layout_editor_absoluteX="-24dp"
+        tools:layout_editor_absoluteY="74dp" />
+</android.support.constraint.ConstraintLayout>

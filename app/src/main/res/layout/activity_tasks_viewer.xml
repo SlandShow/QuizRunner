@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.test_apps.slandshow.quizrunner.TasksViewer">
+
+    <br.tiagohm.markdownview.MarkdownView
+        android:id="@+id/markdown_view"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_below="@+id/textView4"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_toStartOf="@+id/textView6"
+        android:text="Вопрос   №"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editText"
+        android:text="Answer: "
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_alignEnd="@+id/editText"
+        android:layout_toEndOf="@+id/previousTaskBtn" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/previousTaskBtn" />
+
+    <TextView
+        android:id="@+id/questionNumberTxtV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/textView4"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/previousTaskBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/codeVieverColor"
+        android:text="prew"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/markdown_view" />
+
+    <TextView
+        android:id="@+id/taskNumberTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/questionNumberTxtV"
+        android:text="-"
+        android:textColor="@color/colorPrimary"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:layout_alignStart="@+id/textView6" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="63dp"
+        android:layout_toStartOf="@+id/nextTaskBtn"
+        android:text="current time:" />
+
+    <TextView
+        android:id="@+id/timerInfoTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toStartOf="@+id/nextTaskBtn"
+        android:text="00:00"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>
